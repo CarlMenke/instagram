@@ -1,4 +1,5 @@
 import React from "react";  
+import { Comments } from './Comments'
 /* profile logo
     username
     photo
@@ -16,7 +17,8 @@ export const Post = (props) => {
             </div>
             
             <img className='postPhoto' src={props.postPhoto} width="270px"/>
-            <div className='postComments'>{props.postComments}</div>
+            
+            <Comments></Comments>
         </div>
             
     )
