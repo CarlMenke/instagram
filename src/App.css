@@ -62,7 +62,7 @@
   padding: 8px;
   border-radius: 7px;
   margin:20px;
-  height:60vh;
+  height:fit-content;
   border: 2px solid #a8a6a6;
 }
 .commentsContainer{
