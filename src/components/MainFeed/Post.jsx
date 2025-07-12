@@ -18,7 +18,7 @@ export const Post = (props) => {
             
             <img className='postPhoto' src={props.postPhoto} width="270px"/>
             
-            <Comments></Comments>
+            <Comments/>
         </div>
             
     )
