@@ -9,11 +9,15 @@
 .sidebarContainer {
   padding: 20px;
   border-right: 1px solid #e0e0e084;
-  width: 140px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 155px;
   height: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  
   
 }
 .sidebarLogo {
@@ -47,7 +51,7 @@
 }
 
 /* POST STYLES */
-.postHeaderContainer {
+.postHeaderContainer{
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -58,7 +62,15 @@
   padding: 8px;
   border-radius: 7px;
   margin:20px;
-  height:30vh;
+  height:fit-content;
+  border: 2px solid #a8a6a6;
+}
+.commentsContainer{
+  background-color: aqua;
+  border-radius: 5px;
+  height: 28px;
+  width: 270px;
+  gap: 10px;
 }
 
 
