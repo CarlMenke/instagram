@@ -1,9 +1,9 @@
 /* ROOT STYLES */
-.rootContainer{
+.rootContainer {
   height: 100vh;
-  background-color: rgb(6, 28, 31);
-  display:flex 
- }
+  background-color: rgb(48, 58, 59);
+  display: flex;
+}
 
 /* SIDEBAR STYLES */
 .sidebarContainer {
@@ -17,8 +17,6 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  
-  
 }
 .sidebarLogo {
   font-size: 24px;
@@ -28,50 +26,63 @@
 }
 
 /* LINK BUTTON STYLES */
-.linkButtonContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px
+.linkButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-.linkButtonContainer:hover{
+.linkButtonContainer:hover {
   background-color: darkgrey;
   margin: 10px;
   padding: 10px;
 }
-.linkButtonIcon{
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
+.linkButtonIcon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
 }
-.linkButtonText{
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
+.linkButtonText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 /* POST STYLES */
-.postHeaderContainer{
+.postHeaderContainer {
   display: flex;
   flex-direction: row;
   gap: 20px;
   border-bottom: 1px solid white;
 }
-.postContainer{
-  background-color: rgb(9, 45, 50);
+.postContainer {
+  background-color: rgb(48, 58, 59);
   padding: 8px;
   border-radius: 7px;
-  margin:20px;
-  height:fit-content;
+  margin: 20px;
+  height: fit-content;
   border: 2px solid #a8a6a6;
 }
-.commentsContainer{
+.commentsContainer {
   background-color: aqua;
   border-radius: 5px;
   height: 28px;
   width: 270px;
   gap: 10px;
 }
-
-
-
+/* Post Actions*/
+.postActionsContainer {
+  background-color: rgb(48, 58, 59);
+  border-radius: 5px;
+}
+.actionButton {
+  background-color: rgb(48, 58, 59);
+  border-radius: 5px;
+}
+.actionButton:hover {
+  background-color: rgb(169, 165, 169);
+}
+.likeButton.liked {
+  color: #ff3040;
+  fill: #ff3040;
+}
