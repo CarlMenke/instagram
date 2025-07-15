@@ -1,10 +1,19 @@
-import React from 'react'
-import { LinkButton } from './LinkButton'
-import { Home, Search, Compass, Film, MessageCircle, Heart, PlusSquare, User } from 'lucide-react'
-import { useEffect, useState  } from 'react'
+import React from 'react';
+import { LinkButton } from './LinkButton';
+import {
+  Home,
+  Search,
+  Compass,
+  Film,
+  MessageCircle,
+  Heart,
+  PlusSquare,
+  User,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const navItemsArray = [
-  {icon: Home,text: 'Home'},
+  { icon: Home, text: 'Home' },
   { icon: Search, text: 'Search' },
   { icon: Compass, text: 'Explore' },
   { icon: Film, text: 'Reels' },
@@ -14,16 +23,14 @@ const navItemsArray = [
   { icon: User, text: 'Profile' },
 ];
 
-
 export const SideBar = (props) => {
-
-    return (
-        <div className='sidebarContainer'>
-            <div className='sidebarLogo'>{props.logotext}</div>
-            {navItemsArray.map((item) => {
-                const Icon = item.icon
-                return <LinkButton icon={<Icon/>} text={item.text} />
-            })}
-        </div>
-    )
-}
+  return (
+    <div className="sidebarContainer">
+      <div className="sidebarLogo">{props.logotext}</div>
+      {navItemsArray.map((item) => {
+        const Icon = item.icon;
+        return <LinkButton icon={<Icon />} text={item.text} />;
+      })}
+    </div>
+  );
+};
