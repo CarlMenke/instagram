@@ -16,7 +16,9 @@ export const Post = (props) => {
       </div>
 
       <img className="postPhoto" src={props.postPhoto} width="270px" />
-      <PostActions></PostActions>
+
+      <PostActions />
+
       <Comments postComments={props.postComments} />
     </div>
   );
