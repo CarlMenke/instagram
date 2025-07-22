@@ -10,8 +10,7 @@ import {
   PlusSquare,
   User,
 } from 'lucide-react';
-import { useEffect, useState } from 'react';
-
+import { useIsMobile } from '../../hooks/useIsMobile'
 const navItemsArray = [
   { icon: Home, text: 'Home' },
   { icon: Search, text: 'Search' },
@@ -24,6 +23,13 @@ const navItemsArray = [
 ];
 
 export const SideBar = (props) => {
+
+  const isMobile = useIsMobile()
+
+  if (isMobile) {
+    return <></>
+  }
+
   return (
     <div className="sidebarContainer">
       <div className="sidebarLogo">{props.logotext}</div>
