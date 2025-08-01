@@ -11,12 +11,12 @@
   border-right: 1px solid #e0e0e084;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 155px;
+  width: 185px;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 .sidebarLogo {
   font-size: 24px;
@@ -31,11 +31,25 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .linkButtonContainer:hover {
-  background-color: darkgrey;
-  margin: 10px;
-  padding: 10px;
+  background-color: #2d9cdb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(45, 156, 219, 0.15);
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    box-shadow 0.2s;
+}
+.linkButtonContainer:hover .linkButtonIcon,
+.linkButtonContainer:hover .linkButtonText {
+  color: #fff;
+  transition: color 0.2s;
 }
 .linkButtonIcon {
   font-size: 24px;
